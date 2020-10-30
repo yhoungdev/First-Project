@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enjoy Color</title>
+<style type="text/css" media="all">
+    .container {
+    margin: 1em 1em;
+    width: 90%;
+    height: 100px;
+    margin-top: 50%;
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+    }
+    #color {
+    padding: 10px;
+    outline: 0;
+    margin-top: 1em;
+    border: none;
+    background: #e6e7ee;
+    border-bottom: 4px solid black;
+    width: 90%;
+    color: black;
+    font-size: 20px;
+    }
+    #color:hover {
+    border: none;
+    border-bottom: 3px solid brown;
+    }
+</style>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <input type="text" id="color" value="" placeholder="Enter color" oninput="change(this.value)" /> <br />
+    </div>
+
+<script type="text/javascript" charset="utf-8">
+    function change(val) {document.body.style.background = val;};
+</script>
+</body>
+</html>
