@@ -7,13 +7,11 @@
 <style type="text/css" media="all">
     body {transition: 1s;}
     .container {
-    margin: 1em 1em;
-    width: 90%;
-    height: 100px;
-    margin-top: 50%;
-    border-radius: 6px;
-    background: white;
-    text-align: center;
+        display: flex;
+     
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
     #color {
     padding: 10px;
@@ -30,6 +28,7 @@
     border: none;
     border-bottom: 3px solid brown;
     }
+ 
 </style>
     
 </head>
@@ -39,8 +38,8 @@
         <input type="text" id="color" value="" placeholder="Enter color. E.g, Brown, #000 ..." oninput="change(this.value)" /> <br />
     </div>
 
-<script type="text/javascript" charset="utf-8">
-    function change(val) {document.body.style.background = val;};
+<script type="text/javascript" charset="utf-8" >
+    function change(val) {document.body.style.background = val};
 </script>
 </body>
 </html>
